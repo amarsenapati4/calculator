@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono",monospace;
+}
+body{
+height: 100vh;
+background-image: linear-gradient(to top, #0adc95, #5bdd83, #83de73, #a4dd65, #c1dc5c, #d9d051, #eec34e, #ffb653, #ff9c63, #ff837f, #ff72a1, #f96ec5);
+}
+.container{
+    width: 400px;
+    background-image: linear-gradient(to right top, #0b0537, #004081, #007aac, #00b5a3, #12eb6e);
+    padding: 60px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
+}
+.display{
+    width: 100%;
+}
+.display input{
+width: 100%;
+padding: 15px 10px;
+text-align: right;
+border: none;
+background-color: transparent;
+font-size: 35px;
+}
+.buttons
+{
+    display:grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-gap: 20px;
+}
+.button{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    border-radius: 60%;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.del{
+    grid-column:1/span 2;
+}
+.zero{
+    grid-column: 1/span 2;
+}
